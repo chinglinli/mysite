@@ -1,11 +1,10 @@
+from imports.infrastructure.blog.model import db
 from imports.infrastructure.blog.model.category_model import CategoryModel
-from imports.server import db
-
 
 categories = db.Table('categories',
-    db.Column('article_id', db.Integer, db.ForeignKey('article.id'), primary_key=True),
-    db.Column('category_id', db.Integer, db.ForeignKey('category.id'), primary_key=True)
-)
+                      db.Column('article_id', db.Integer, db.ForeignKey('article.id'), primary_key=True),
+                      db.Column('category_id', db.Integer, db.ForeignKey('category.id'), primary_key=True)
+                      )
 
 
 class ArticleModel(db.Model):

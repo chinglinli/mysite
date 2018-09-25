@@ -3,8 +3,8 @@ import injector
 from imports.domains.blog.entities.article import Article
 from imports.domains.blog.entities.category import Category
 from imports.domains.blog.repositories import ArticleRepository
+from imports.infrastructure.blog.model import db
 from imports.infrastructure.blog.model.article_model import ArticleModel
-from imports.server import db
 
 
 @injector.singleton

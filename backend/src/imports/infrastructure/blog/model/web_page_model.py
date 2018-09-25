@@ -1,4 +1,4 @@
-from imports.server import db
+from imports.infrastructure.blog.model import db
 
 
 class WebPageModel(db.Model):
